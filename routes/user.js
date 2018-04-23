@@ -73,7 +73,6 @@ module.exports = (app) => {
        var sql = "INSERT INTO `Cart`(`UserID`,`ProductID`) VALUES ('" + userId + "','" + prodId + "')";
        connection.query(sql,(err, result) => {
              console.log('Added to cart');
-            //res.render('user/profile'{data:result});
 
           });
         });
@@ -88,10 +87,6 @@ module.exports = (app) => {
       }
   })
 });
-// app.post('/addtocart',(req,res) => {
-//   console.log(req.body);
-//   console.log('added');
-// });
 }
 
 //-----------------------------------------------dashboard page functionality----------------------------------------------
